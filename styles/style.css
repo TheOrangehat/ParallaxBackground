@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.main {
+  background-color: rgb(26, 22, 32);
+  height: 100vmax;
+  width: 100vmax;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 5;
+}
+
+.wallpaper {
+  height: 100%;
+  width: 100%;
+}
+#Bottomlayer,
+#Middlelayer,
+#Toplayer {
+  height: 100vh;
+
+  position: absolute;
+}
+#Bottomlayer {
+  height: 330px;
+  right: 28vw;
+  top: 34vh;
+  z-index: 0;
+}
+
+#Middlelayer {
+  z-index: 1;
+  left: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#Toplayer {
+  z-index: 2;
+  right: -277px;
+  
+}
